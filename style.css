@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+main{
+    background-color: hsl(0, 0%, 81%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    gap: 5px;
+    margin: 40px;
+    box-shadow: 0 0 10px 5px black;
+    font-size: 14px;
+    font-family: Barlow Semi Condensed;
+}
+
+div{
+    margin: 10px;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.header{
+    display: block;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    position: relative;
+}
+
+.qoute{
+    position:absolute;
+    top: 0;
+    right: 80px;
+    width: 20%;
+    height: 50%;
+    z-index: 9;
+}
+.profile_1{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+
+}
+.profile_1 img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.profile_1 h3{
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.profile_1 h3 > p{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.6rem;
+    margin: 5px ;
+    margin-bottom: 0px;
+}
+
+.contents{
+    background: none !important;
+    border: none;
+}
+.contents p{
+    display: block;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.contents p:nth-child(1){
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 500px;
+    margin: 0 5px;
+    background-color: none;
+    border: none;
+}
+
+.contents p:nth-child(2){
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin: 0 5px;
+    justify-content: justify;
+    background-color: none;
+    border: none;
+}
+
+
+
+div:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: hsl(217, 19%, 35%);
+    display: block; 
+    inherits: contents;
+    
+}
+
+
+.profile_2{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: none !important;
+    border: none;
+    background-color: inherit !important;
+    margin: 20px;
+}
+
+
+.profile_2 img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+    border: 1px transparent;
+}
+
+h2{
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.profile_2 h2 > p{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.6rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.company p:nth-child(1){
+    background: none !important;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;  
+    font-weight: 500px;
+    margin: 5px 20px;
+}
+
+.company p:nth-child(2){
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+div:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header-3{
+    display: block;
+}
+
+.profile_3{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: none !important;
+    border: none;
+    background-color: inherit !important;
+    margin: 20px;
+}
+
+
+.profile_3 img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+    border: 1px transparent;
+    box-shadow: inset;
+}
+
+h4{
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.profile_3 h4 > p{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.6rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+
+.life{
+    background-color: white;
+    background: none !important;
+    background-color: inherit !important;
+}
+.life p:nth-child(1){
+    border: none;
+    color: hsl(219, 29%, 14%);
+    font-size: 1.4rem;  
+    font-weight: 700px;
+    margin: 5px 20px;
+}
+
+.life p:nth-child(2){
+    color: hsl(219, 29%, 14%);
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+div:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.header-4{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: hsl(0, 0%, 100%);
+    display: block; 
+    inherits: contents;
+    
+}
+
+
+.profile_5{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: none !important;
+    border: none;
+    background-color: inherit !important;
+    margin: 20px;
+}
+
+
+.profile_5 img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+    border: 1px transparent;
+}
+
+h5{
+    color: hsl(219, 29%, 14%);
+    font-size: 1rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.profile_5 h5 > p{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.6rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.experience{
+    background-color: white;
+    background: none !important;
+    background-color: inherit !important;
+}
+
+.experience p:nth-child(1){
+    background: none !important;
+    background-color: inherit !important;
+    border: none;
+    color: hsl(219, 29%, 14%);
+    font-size: 1.4rem;  
+    font-weight: 500px;
+    margin: 5px 20px;
+}
+
+.experience p:nth-child(2){
+    background-color: inherit !important;
+    background-color: none !important;
+    color: hsl(217, 19%, 35%);
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+div:nth-child(5){
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color:hsl(219, 29%, 14%);
+}
+
+.pat{
+    display: block;
+}
+
+.profile-6{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: none !important;
+    border: none;
+    background-color: inherit !important;
+    margin: 20px;
+}
+
+
+.profile-6 img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+    border: 1px transparent;
+    box-shadow: inset;
+}
+
+h6{
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+.profile-6 h6 > p{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.6rem;
+    margin: 5px;
+    background-color: none !important;
+}
+
+
+.Awesome{
+    background-color: white;
+    background: none !important;
+    background-color: inherit !important;
+}
+.Awesome p:nth-child(1){
+    border: none;
+    color: white;
+    font-size: 1.4rem;  
+    font-weight: 700px;
+    margin: 5px 20px;
+}
+
+.Awesome p:nth-child(2){
+    color: hsl(210, 46%, 95%);
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+
